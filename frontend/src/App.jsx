@@ -3,7 +3,7 @@ import { Upload, Check, X, Search, Download, Eye, LogOut, Home, Users, Ticket, A
 import axios from 'axios';
 
 
-const API_URL = 'http://13.61.180.156:5000/api';
+const API_URL = 'http://ec2-13-61-180-156.eu-north-1.compute.amazonaws.com:5000/api';
 
 export default function App() {
   const [view, setView] = useState('home');
