@@ -233,7 +233,7 @@ export default function App() {
           <div style={{position:'fixed',inset:0,display:'flex',alignItems:'center',justifyContent:'center',background:'rgba(0,0,0,0.8)'}} onClick={()=>setSelectedTicket(null)}>
             <div style={{background:'#0b1220',padding:20,borderRadius:12}} onClick={e=>e.stopPropagation()}>
               <h3>{selectedTicket.nombre}</h3>
-              <img src={`http://localhost:5000${selectedTicket.comprobante_url}`} 
+              <img src={`http://localhost:3001${selectedTicket.comprobante_url}`} 
               alt="comprobante" 
           style={{maxWidth:600}} />
               <p>Estado: {selectedTicket.estado}</p>
