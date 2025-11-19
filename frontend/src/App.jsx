@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Upload, Check, X, Search, Download, Eye, LogOut, Home, Users, Ticket, AlertCircle, CheckCircle, Clock } from 'lucide-react';
 import axios from 'axios';
 
-const API_URL = '/api';
-
+const API_URL = 'http://ec2-13-61-180-156.eu-north-1.compute.amazonaws.com:5000/api';
 export default function App() {
   const [view, setView] = useState('home');
   const [isAdmin, setIsAdmin] = useState(false);
